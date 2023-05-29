@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+body{
+    background-color:#011627 ;
+}
+main{
+    margin: 3rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid{
+    display: flex;
+    flex-wrap: wrap;   
+    width: 900px;
+    height: 900px;
+}
+.square{
+    width: calc(900px / 10 - 4px);
+    height: calc(900px / 10 - 4px);
+    border: 2px solid white ; 
+    background-color: cyan ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 23px;
+}
+.clicked{
+    background-color: red;
+}

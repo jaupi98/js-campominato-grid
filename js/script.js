@@ -5,6 +5,7 @@ function createSquareElement(){
     return square;
 }
 
+
 // Recupero l'elelmento in cui creare la griglia
 
 const grid = document.getElementById('grid');
@@ -12,6 +13,12 @@ const grid = document.getElementById('grid');
 for(let i = 0; i<100; i++){
     // creo il singolo quadtratino
     let square = createSquareElement();
-    console.log(square);
+    square.innerText = i + 1;
+
+    square.addEventListener('click',function(){
+        this.classList.toggle('clicked');
+
+    });
+    grid.append(square);
 
 }
